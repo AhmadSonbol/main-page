@@ -94,3 +94,8 @@ section {
   transform: scale(1.1);
 }
 
+.social-icons a{
+  color: #fff;
+  font-size: 1.7em;
+  padding-right: 30px;
+}
