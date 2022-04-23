@@ -31,7 +31,7 @@ header {
   color: #3a6cf4;
   font-weight: 500;
   font-size: 1.1em;
-  padding-left: 30px; 
+  padding: 30px 30px; 
 }
 .navigation a:hover{
   color: #601cfc;
