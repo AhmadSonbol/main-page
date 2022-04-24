@@ -1,288 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css";>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>Ahmad Sonbol - Portfolio</title>
+</head>
+  
+<body>
+  
+<header>
+  <a href="#" class="logo">Ahmad</a>
+  <nav class="navigation">
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-*{
-  font-family: 'popins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
+<section class="main">
+  <div>
+    <h2>Hey, this is Ahmad<br><span>A Novice Web Developer</span></h2>
+    <h3>I build & develop the coolest website designs</h3>
+    <a href="#projects" class="main-btn">View my Work</a>
+    <div class="social-icons">
+      <a href="https://linkedin.com" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com" target="_blank" class="github"><i class="fa fa-github"></i></a>
+      <a href="https://twitter.com" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a href="https://facebook.com" target="_blank" class="facebook"><i class="fa fa-facebook-square"></i></a>
+      <a href="https://youtube.com" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+  </div>
+</section>
 
-header {
-  background-color: #f0f0f0;
-  width: 100%;
-  position: fixed;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 200px;
-}
-
-.logo { 
-  text-decoration: none;
-  color: #3a6cf4;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.8em;
-}
-
-.navigation a {
-  text-decoration: none;
-  color: #3a6cf4;
-  font-weight: 500;
-  font-size: 1.1em;
-  padding: 30px 30px; 
-}
-.navigation a:hover{
-  color: #601cfc;
-}
-
-section {
-  padding: 100px 200px;
-}
-
-.main { 
-  width: 100%;
-  min-height: 100vh;
-  display: felx;
-  align-items: center;
-  background: url(https://www.hdnicewallpapers.com/Walls/Big/Computers/Superb_HD_Laptop_Background_Wallpaper.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.main h2 {
-  color: #fff;
-  font-size: 1.4em;
-  font-weight: 500;
-}
-
-.main span {
-  display: inline-block;
-  margin-top: 10px;
-  color:#4e93ff;
-  font-size: 3em;
-  font-weight: 600; 
-}
-
-.main h3 {
-  color: #fff;
-  font-size: 2em;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-.main-btn {
-  color: #fff;
-  background-color: #4e9eff;
-  text-decoration:none;
-  font-size: 1.1em;
-  font-weight: 600;
-  display: inline-block;
-  padding: 0.9375em 2.1875em;
-  letter-spacing: 1px;
-  border-radius: 15px;
-  margin-bottom: 40px;
-  transition: 0.7s ease;
-}
-
-.main-btn:hover {
-  background-color: #0a49f6;
-  transform: scale(1.1);
-}
-
-.social-icons a{
-  color: #fff;
-  font-size: 1.7em;
-  padding-right: 30px;
-}
-
-.title {
-    display: flex;
-    justify-content: center;
-    color: #3a6cf4;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 30px;
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: #fff;
-    width: 21.25em;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 40%);
-    border-radius: 10px;
-    padding: 25px;
-    margin: 15px;
-    transition: 0.7s ease;
-}
-
-.card:hover {
-    transform: scale(1.1);
-}
-
-.icon {
-    color:#3a6cf4;
-    font-size: 8em;
-    text-align: center;
-
-}
-
-.info {
-    text-align: center;
-}
-
-.info h3 {
-    color:#3a6cf4;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 10px;
-}
-
-.projects {
-    background-color: #000009;
-}
-
-.projects .content {
-    margin-top: 30px;
-}
-
-.project-card {
-    background-color: #fff;
-    border: 1px solid #fff;
-    min-height: 14em;
-    width: 23em;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 20px;
-    transition: 0.7s ease;
-
-}
-
-.project-card:hover {
-    transform: scale(1.1);
-}
-
-.project-card:hover .project-image{
-    opacity: 0.93;
-}
-
-.project-image img{
-    width: 100%;
-}
-
-.project-info {
-    padding: 1em;
-}
-
-.project-category {
-    font-size: 0.8em;
-    color: #000;
-}
-
-.project-title {
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-top: 10px;
-}
-
-.more-details {
-    text-decoration: none;
-    color: #3a6cf4;
-}
-.more-details:hover {
-    color: #601cfc;
-}
-
-.contact .icon {
-    font-size: 4.5em;
-}
-
-.contact .info h3 {
-    font-size: 1.5em;
-    color: #000;
-}
-
-.contact .info a, .contact .info p {
-    font-size: 1.2em;
-    color:#000;
-    text-decoration: none;
-}
-.contact .info a:hover{
-    color: #601cfc;
-}
-
-.footer {
-    background-color: #000016;
-    color: #fff;
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-title {
-    font-size: 1.3em;
-    font-weight: 600;
-}
-
-.footer-title span {
-    color: #3a6cf4;
-}
-
-.footer .social-icons {
-    font-size: 0.8em;
-}
-
-@media (max-width: 1023px) {
-    header {
-        padding: 6px 10px;
-    }
-    .navigation a {
-        padding-left: 10px;
-    }
-    .title {
-        font-size: 1.8em;
-    }
-    section {
-        padding: 80px 20px;
-    }
-    .main-content h2 {
-        font-size: 1em;
-    }
-    .main-content h3 {
-        font-size: 1.6em;
-    }
-    .content {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 641px) {
-    body {
-        font-size: 12px;
-    }
-    .main-content h2 {
-        font-size: 0.8em;
-    }
-    .main-content h3 {
-        font-size: 1.4em;
-    }
-}
-
-@media (max-width:300px) {
-    body {
-        font-size: 10px;
-    }
-}
+<section class="cards" id="services">
+    <h2 class="title">Services</h2>
+    <div class="content">
+        <div class="card">
+            <div class="icon">
+                <i class="fa fa-edit"></i>
+            </div>
+            <div class="info">
+                <h3>Script Writing</h3>
+                <p>Provide my customers with high quality scripts in different languages bla bla blabla bla bla bla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla bla bla blabla bla blabla bla blabla bla bla</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <i class="fa fa-edit"></i>
+            </div>
+            <div class="info">
+                <h3>Script Writing</h3>
+                <p>Provide my customers with high quality scripts in different languages bla bla blabla bla bla bla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla bla bla blabla bla blabla bla blabla bla bla</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <i class="fa fa-edit"></i>
+            </div>
+            <div class="info">
+                <h3>Script Writing</h3>
+                <p>Provide my customers with high quality scripts in different languages bla bla blabla bla bla bla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla bla bla blabla bla blabla bla blabla bla bla</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="projects" id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="content">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/10/22/13/463842675.jpg?quality=75&width=1200&auto=webp" alt="">
+            </div>
+            <div class="project-info">
+                    <p class="project-category"> My first viedo on youtube</p>
+                    <strong class="project-title">
+                        <span>DEV box</span>
+                        <a href="https://www.youtube.com/watch?v=cARGOrtiWt4" class="more-details">More Details</a>
+                    </strong>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj8UmC4bXHqOFuoERlnNq1djwyJcesPRxcDQ&usqp=CAU" alt="">
+            </div>
+            <div class="project-info">
+                    <p class="project-category"> My first viedo on youtube</p>
+                    <strong class="project-title">
+                        <span>DEV box</span>
+                        <a href="https://www.youtube.com/watch?v=cARGOrtiWt4" class="more-details">More Details</a>
+                    </strong>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://cdn.pocket-lint.com/r/s/1200x/assets/images/152006-phones-feature-how-to-keep-youtube-music-playing-in-the-background-on-iphone-image1-bn5ocxv9hk.jpg" alt="">
+            </div>
+            <div class="project-info">
+                    <p class="project-category"> My first viedo on youtube</p>
+                    <strong class="project-title">
+                        <span>DEV box</span>
+                        <a href="https://www.youtube.com/watch?v=cARGOrtiWt4" class="more-details">More Details</a>
+                    </strong>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <h2 class="title">Let's work together</h2>
+    <div class="content">
+        <div class="card">
+            <div class="icon">
+                <i class="fa fa-phone"></i>
+            </div>
+            <div class="info">
+                <h3>Phone</h3>
+                <p>+46 727 880 908</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <i class="fa fa-envelope"></i>
+            </div>
+            <div class="info">
+                <h3>Email</h3>
+                <p> <a href="https://yahoo.com">ahmad.senbol@yahoo.com</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <p class="footer-title">Copyrights @<span>Ahmad Sonbol</span></p>
+    <div class="social-icons">
+       <a href="https://linkedin.com" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+       <a href="https://github.com" target="_blank" class="github"><i class="fa fa-github"></i></a>
+       <a href="https://twitter.com" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+       <a href="https://facebook.com" target="blank" class="facebook"><i class="fa fa-facebook-square"></i></a>
+       <a href="https://youtube.com" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+     </div>
+</footer>
+</body>
+</html>
